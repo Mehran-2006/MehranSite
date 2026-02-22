@@ -1035,7 +1035,7 @@
                     <input type="text" id="${profile}_${section.id}_name" placeholder="نام">
                     <input type="url" id="${profile}_${section.id}_link" placeholder="لینک دانلود">
                     <input type="text" id="${profile}_${section.id}_reason" placeholder="💬 دلیل">
-                    ${section.addType === 'movie' ? '<input type="file" id="${profile}_${section.id}_poster" accept="image/*" placeholder="پوستر">' : ''}
+                    ${section.addType === 'movie' ? `<input type="file" id="${profile}_${section.id}_poster" accept="image/*" placeholder="پوستر">` : ''}
                     <button onclick="addMovieSongItem('${profile}', '${section.id}')">💾 ذخیره</button>
                     <button class="cancel" onclick="document.getElementById('${formId}').classList.remove('active')">❌ انصراف</button>
                 `;
